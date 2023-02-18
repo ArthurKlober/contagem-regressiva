@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --black: #4D4C59;
+  --purple: #6C63FF;
+  --light-grey: #C8C8C8;
+  --text-color: #9C9AB6;
+}
+
+body {
+  font-family: Poppins;
+}
+
+.main {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+
+  background-color:  #ffffff;
+}
+
+/* --- BACKGROUND IMAGES --- */
+
+.top-image {
+  width: 100%;
+
+  position: absolute;
+  top: -1rem;
+  left: 0;
+}
+
+.bottom-image {
+  width: 100%;
+
+  position: absolute;
+  bottom: 0rem;
+  left: 0;
+}
+
+/* ------ CONTENT ------ */
+
+.content {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.content-text {
+  width: 700px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content-text h1 {
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--purple);
+}
+
+.countdown-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 17px;
+}
+
+.countdown-el {
+  text-align: center;
+  width: 91px;
+}
+
+.content-text .text {
+  font-size: 72px;
+  font-weight: 400;
+  color: var(--black);
+}
+
+.content-text .divider {
+  font-size: 72px;
+  font-weight: 400;
+  color: var(--black);
+  margin: 0 1rem;
+
+}
+
+.content-text span {
+  font-size: 14px;
+  font-weight: 300;
+  color: var(--text-color);
+}
+
+.content-text p {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--light-grey);
+}
+
+.content-text .subscribe {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--black);
+
+  margin-bottom: 30px;
+}
+
+.days-c {
+  margin-right: 20px;
+}
+
+/* --- BUTTON --- */
+
+a {
+  width: 160px;
+  height: 46px;
+  background-color: var(--purple);
+  color: var(--light-grey);
+  border-radius: 10px;
+  text-decoration: none;
+  
+  display: flex;
+  justify-content: center;
+  padding: 10px 32px
+}
+
+/* --- IMAGE --- */
+
+.img img {
+  width: 432px;
+}
+
+
+/* ------ RESPONSIVE ------*/
+
+@media (max-width: 1030px) {
+  .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 4rem;
+  }
+
+  .content-text .text {
+    font-size: 48px;
+    text-align: center;
+  }
+  
+  .content-text .divider {
+    font-size: 48px;
+    margin: 0 5px;
+  }
+  .days-c {
+    margin-right: 0px;
+  }
+
+
+}
+
+@media (max-width: 700px) {
+
+  .content-text {
+    width: 480px;
+}
+
+}
+@media (max-width: 500px) {
+
+.content-text {
+  width: 280px;
+  text-align: center;
+}
+
+.content-text .text {
+  font-size: 36px;
+  text-align: center;
+}
+
+.content-text .divider {
+  font-size: 36px;
+  margin: 0 5px;
+}
+
+.countdown-el {
+  text-align: center;
+  width: 60px;
+}
+
+.img img {
+  width: 290px;
+}
+
+}
